@@ -10,6 +10,7 @@ import { ReplyComponent } from './components/reply/reply.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from 'ng-recaptcha';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from 'ng-recaptcha';
   ],
   exports: [TweetComponent],
   providers: [
-    { provide: RECAPTCHA_V3_SITE_KEY, useValue: '6Ld8gl8rAAAAAMq-KW6fNvx8c_jCx08nXNdWDsWx' }
+    { provide: RECAPTCHA_V3_SITE_KEY, useValue: environment.reCaptchaSecretKey }
   ],
   bootstrap: [AppComponent]
 })
