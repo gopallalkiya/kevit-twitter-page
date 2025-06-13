@@ -1,0 +1,13 @@
+<div style="padding: 20px;">
+  <button style="float:right;" (click)="logout()">Logout</button>
+  <h3>Welcome, {{ username }}</h3>
+
+  <div style="margin: 20px 0;">
+    <input [(ngModel)]="newTweet" placeholder="What's happening?" />
+    <button (click)="postTweet()">Tweet</button>
+  </div>
+
+  <div *ngFor="let tweet of tweets">
+    <app-tweet [tweet]="tweet"></app-tweet>
+  </div>
+</div>

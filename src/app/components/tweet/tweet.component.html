@@ -1,0 +1,11 @@
+<div class="tweet">
+  <strong>{{ tweet.username }}</strong>: {{ tweet.content }}
+  <div style="margin: 10px 0;">
+    <input [(ngModel)]="replyText" placeholder="Reply..." />
+    <button (click)="reply()">Reply</button>
+  </div>
+
+  <div *ngFor="let reply of replies" style="margin-left: 20px;">
+    <app-tweet [tweet]="reply"></app-tweet>
+  </div>
+</div>

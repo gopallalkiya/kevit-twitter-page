@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+input {
+  padding: 6px;
+  margin-right: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 6px 10px;
+  background-color: #1da1f2;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+.tweet {
+  background: #f5f8fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
