@@ -1,5 +1,4 @@
-KevitTwitterPage
-Angular version 14.2.13.
+## KevitTwitterPage - Angular version 14.2.13.
 
 ## Installtion Guide
 - Clone Repo
